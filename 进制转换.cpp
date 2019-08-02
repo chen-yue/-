@@ -32,6 +32,8 @@ int d2q(int y,int Q)//Decimal to Q
 //		z[num++]=y%Q;
 //		y/=Q;
 //	}while(y)
+//用do-while而不是while的原因：
+//若y=0，用while会直接跳出(没有做z[0]=0,num=1的赋值操作)
 int main()
 {
 	int x,P,Q;
