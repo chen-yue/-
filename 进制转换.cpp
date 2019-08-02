@@ -26,6 +26,12 @@ int d2q(int y,int Q)//Decimal to Q
 	return z;
 	
 }
+//如果z是数组，而不是单单一个int
+//	int z[40],num=0;
+//	do{
+//		z[num++]=y%Q;
+//		y/=Q;
+//	}while(y)
 int main()
 {
 	int x,P,Q;
